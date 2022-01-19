@@ -1,0 +1,151 @@
+* {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  max-width: 100%;
+  background: #e5e5e5;
+  height: 100vh;
+  z-index: -999;
+}
+
+.app__container {
+  margin: 0 auto;
+  width: 400px;
+  height: 700px;
+  position: absolute;
+  z-index: 999;
+  top: 1rem;
+  background: #fff;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app__background {
+  position: relative;
+  height: 200px;
+  background-image: url(../img/bg2.jpg);
+  background-repeat: none;
+  background-size: cover;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.app__refresh {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  color: white;
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.app__refresh:hover {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.app__date {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  color: white;
+}
+
+.app__to-do-content {
+  height: 450px;
+  overflow-y: scroll;
+}
+
+.app__to-do-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 45px;
+  padding-top: 15px;
+  padding-left: 15px;
+  font-size: 25px;
+  border-bottom: 1px solid gray;
+}
+
+.app__to-do-label {
+  width: 280px;
+}
+
+.app__to-do-trash {
+  display: block;
+  cursor: pointer;
+  border: none;
+  background: inherit;
+  font-size: 25px;
+  padding-right: 25px;
+}
+
+.app__to-do-trash:hover {
+  color: coral;
+}
+
+.app__add-to-do {
+  padding: 1rem;
+}
+
+.app__add-to-do__button {
+  border: none;
+  background: inherit;
+  color: #4162f6;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.app__add-to-do__text {
+  width: 305px;
+  height: 30px;
+  font-size: 25px;
+  border: none;
+  color: #4162f6;
+}
+
+.app__add-to-do__text::-webkit-input-placeholder {
+  color: #4162f6;
+}
+
+.app__add-to-do__text:-ms-input-placeholder {
+  color: #4162f6;
+}
+
+.app__add-to-do__text::-ms-input-placeholder {
+  color: #4162f6;
+}
+
+.app__add-to-do__text::placeholder {
+  color: #4162f6;
+}
+
+.app__add-to-do__text:focus {
+  outline: none;
+}
+
+input[type=checkbox] {
+  cursor: pointer;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+/*# sourceMappingURL=app.css.map */

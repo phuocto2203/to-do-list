@@ -1,0 +1,117 @@
+* {
+  font-family: sans-serif;
+}
+.wrapper {
+  // position: relative;
+  max-width: 100%;
+  background: #e5e5e5;
+  height: 100vh;
+  z-index: -999;
+}
+
+.app {
+  &__container {
+    margin: 0 auto;
+    width: 400px;
+    height: 700px;
+    position: absolute;
+    z-index: 999;
+    top: 1rem;
+    background: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__background {
+    position: relative;
+    height: 200px;
+    background-image: url(../img/bg2.jpg);
+    background-repeat: none;
+    background-size: cover;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+  }
+  &__refresh {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    color: white;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      transform: rotate(30deg);
+    }
+  }
+
+  &__date {
+    font-size: 2rem;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    color: white;
+  }
+  &__to-do-content {
+    height: 450px;
+    overflow-y: scroll;
+  }
+
+  &__to-do-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 25px;
+    border-bottom: 1px solid gray;
+    
+  }
+  &__to-do-label {
+    width: 280px;
+  }
+
+  &__to-do-trash {
+    display: block;
+    cursor: pointer;
+    border: none;
+    background: inherit;
+    font-size: 25px;
+    padding-right: 25px;
+    &:hover{
+      color: coral;
+    }
+  }
+  &__add-to-do{
+    padding: 1rem;
+    &__button{
+      border: none;
+      background: inherit;
+      color: #4162f6;
+      font-size: 30px;
+      cursor: pointer;
+      
+    }
+    &__text{
+      width: 305px;
+      height: 30px;
+      font-size: 25px;
+      border: none;
+      color: #4162f6;
+      &::placeholder{
+        color: #4162f6;
+      }
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+  
+}
+input[type=checkbox]{
+  cursor: pointer;
+  transform: scale(2);
+}

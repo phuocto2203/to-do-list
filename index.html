@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <title>To Do List</title>
+
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="app__container">
+        <div class="app__background">
+            <button class="app__refresh"><i class="fas fa-sync-alt "></i></button>
+            <h2 class="app__date"></h2>
+        </div>
+        <div class="app__to-do-content">
+            <ul class="app__to-do-list" id="menu-list">
+                <!-- <li class="app__to-do-item">
+                    <input type="checkbox" class="app__to-do-checkbox"/>
+                    <label for="to-do-item" class="app__to-do-label">fasdfds</label>
+                    <button type = "button" class="app__to-do-trash"><i class="far fa-trash-alt"></i></button>
+                </li> -->
+            </ul>
+        </div>
+        <div class="app__add-to-do">
+            <form action="" class="app__form-to-do">
+                <button type = "button" class="app__add-to-do__button"><i class="fas fa-plus-circle"></i></button>
+                <input type="text" class="app__add-to-do__text" id="myInput" placeholder="Add a-to-do">
+            </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
